@@ -1,0 +1,37 @@
+安卓入门.txt
+
+
+要运行，需要有有一个 Activity
+1、成为Activity类则需要继承Activity
+2、在哪里布局？ src/main/res/layout/activity_main.xml 新建一个布局
+问题：
+怎么显示布局？
+
+用setContentLayout();
+setContentView(R.layout.activity_main);
+
+用 R.layout.XXX文件名称，来关联这个布局
+
+运行一下看看，能不能显示出来？，现在还不能运行，因为还没有程序入口
+
+
+程序入口在哪里？ src/main/AndroidManifest.xml，写两句话 
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+好，已经能看到效果了。
+#################################################################################
+
+1. 创建Activity
+2. 加载布局
+3. 声明Activity
+
+4. 跳转Activity
+
+学习跳转 	https://www.bilibili.com/video/av45515915/?p=2
+
+
