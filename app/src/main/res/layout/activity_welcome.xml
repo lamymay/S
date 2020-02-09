@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+            android:gravity="center"
+            android:textSize="48sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Welcome 111111!"
+    />
+
+</LinearLayout>
+
+
+        <!--
+        如何创建该文件？
+        方法就是右击layout文件夹，new  layout resource file 即可
+        截图见：安卓创建活动布局xml_20200209122722.png
+        -->

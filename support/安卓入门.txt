@@ -16,22 +16,62 @@ setContentView(R.layout.activity_main);
 
 
 程序入口在哪里？ src/main/AndroidManifest.xml，写两句话 
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
-        </activity>
+<activity android:name=".MainActivity">
+    <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
+    </intent-filter>
+</activity>
 
-好，已经能看到效果了。
+这个类intent-filter将未程序声明一个入口
+
+再次编译启动程序，好，已经能看到效果了。
 #################################################################################
 
+0. 初始化一个空项目
 1. 创建Activity
 2. 加载布局
 3. 声明Activity
 
+#################################################################################
+
 4. 跳转Activity
 
 学习跳转 	https://www.bilibili.com/video/av45515915/?p=2
+
+
+新建一个活动，并声明程序入口，程序启动在 做跳转到 MainActivity
+
+编辑那个新建的活动
+
+
+用Intent 实现跳转 ，作用： 从一个（this）活动跳转到另一个活动，第一个参数是当前类.this,第二个参数是要跳转的那个类.class
+
+
+
+
+5. 跳转并携带数据
+
+
+接收int类型的数字，如果没有需要给默认值，基本数据类型注意给出默认值
+接收String数据，可以接收多种
+Toast 用于弹出提示
+
+
+
+5. 跳转返回数据
+接下来学习，返回数据，模拟选择之后返回上一个页面，如：从a跳转到b，由b向a返回一个数据
+、
+
+
+
+
+
+
+
+
+
+
+
 
 
