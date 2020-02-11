@@ -89,14 +89,43 @@ startActivityForResult(intent, 0x10);  //此行代码表示跳转后，想要拿
 7. 安卓中基础控件 git代码在所在分支： class3
 #######################################################################################################
 
+安卓界面上的所有元素，都是通过一个个控件堆叠起来的，所以学习基础控件，很有必要
 
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
+问题：
+控件写在什么地方？
+前面课程中写的XXX.xml, 可以吧这些xml看作成一种解析语言，当程序运行时，程序会把.xml的定义解析成界面，所以可以在xml中编写界面代码
+
+注意：控件都是成对出现的标签
+
+例如：
+<LinearLayout></LinearLayout>
+
+每个控件都会有两个属性
+android:layout_width="wrap_content" 用于标识控件宽度
+android:layout_height="wrap_content" 用于标识控件高度
+注，值可选：
+wrap_content    内容有多大就显示多大
+match_parent    父控件多大就显示多大
+xxdp                   写绝对值，
 
 
-EditText
+第一个： TextView
+android:text                用于设置值
+android:textColor       用于设置文本颜色
+android:textSize         用于设置文本字体大小 xxsp
+
+
+第二个：Button 继承自 TextView ， 所以TextView的属性 Button也有
+Button 默认带了一个背景，我们主要用Button来响应点击事件
+android:id                用于设置值
+
+
+
+附：
+
 TextView
 ImageView
+EditText
 EditText
 ProgressBar
 Button
