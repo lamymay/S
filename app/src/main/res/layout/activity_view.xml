@@ -15,7 +15,7 @@
             android:id="@+id/testBtn"
             android:textSize="40sp"
             android:text="testBtn"/>
-    <!--相当于input框-->
+    <!--输入框相当于HTML中的input框-->
     <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
               android:hint="请输入"
               android:id="@+id/testEditText"
@@ -23,7 +23,42 @@
     />
 <!--图片类渲染 相当与HTML中的IMG-->
     <ImageView android:layout_width="match_parent" android:layout_height="match_parent"
+android:src="@drawable/img1"
+               android:id="@+id/img1"
 
     />
 
+
+    <ProgressBar
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+
+            android:id="@+id/process1"
+            android:progress="0"
+            android:max="100"
+            android:layout_width="100px"
+            android:layout_height="100px"
+    />
+
+    <!--    <ProgressBar
+            android:progress="0"
+            android:max="100"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    />-->
+
+    <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Button"/>
+    <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Button"/>
 </LinearLayout>
