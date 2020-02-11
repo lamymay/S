@@ -21,7 +21,7 @@ setContentView(R.layout.activity_main);
 运行一下看看，能不能显示出来？，现在还不能运行，因为还没有程序入口
 
 
-程序入口在哪里？ src/main/AndroidManifest.xml，写两句话 
+程序入口在哪里？ src/main/AndroidManifest.xml，写两句话
 <activity android:name=".MainActivity">
     <intent-filter>
         <action android:name="android.intent.action.MAIN"/>
@@ -40,10 +40,7 @@ setContentView(R.layout.activity_main);
 
 4. 跳转Activity
 #######################################################################################################
-
-
 学习跳转 	https://www.bilibili.com/video/av45515915/?p=2
-
 
 新建一个活动，并声明程序入口，程序启动在 做跳转到 MainActivity
 
@@ -55,9 +52,8 @@ setContentView(R.layout.activity_main);
 
 
 
-5. 跳转并携带数据
+5. 跳转并携带数据 git代码在所在分支： class1
 #######################################################################################################
-git代码在所在分支： class1
 
 
 接收int类型的数字，如果没有需要给默认值，基本数据类型注意给出默认值
@@ -66,11 +62,11 @@ Toast 用于弹出提示
 
 
 
-6. 跳转后返回数据，即：a跳到b，b处理完成后返回a并带上数据给a
+6. 跳转后返回数据，即：a跳到b，b处理完成后返回a并带上数据给a git代码在所在分支： class2
 #######################################################################################################
-git代码在所在分支： class2
+
 接下来学习，返回数据，模拟选择之后返回上一个页面，如：从a跳转到b，由b向a返回一个数据
-                       
+
 startActivityForResult(intent, 0x10);  //此行代码表示跳转后，想要拿到返回值
 用这个函数来接收返回值 protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
@@ -90,9 +86,9 @@ startActivityForResult(intent, 0x10);  //此行代码表示跳转后，想要拿
 
 
 
-7. 安卓中基础控件
+7. 安卓中基础控件 git代码在所在分支： class3
 #######################################################################################################
-git代码在所在分支： class7
+
 
 android:layout_width="wrap_content"
 android:layout_height="wrap_content"
