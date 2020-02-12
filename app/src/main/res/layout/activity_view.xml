@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
@@ -21,44 +21,56 @@
               android:id="@+id/testEditText"
               android:textSize="30sp"
     />
-<!--图片类渲染 相当与HTML中的IMG-->
-    <ImageView android:layout_width="match_parent" android:layout_height="match_parent"
-android:src="@drawable/img1"
-               android:id="@+id/img1"
+    <!--图片类渲染 相当与HTML中的IMG-->
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_launcher_background"
+            android:id="@+id/imageView"/>
+<!--
+    <Switch
+            android:text="Switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/switch1"/>
+-->
 
-    />
+<!-- 圆的-->
+        <ProgressBar
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:id="@+id/processBar1"
+                android:progress="0"
+                android:max="100"
+                style="@style/Widget.AppCompat.ProgressBar"
+
+        />
 
 
+
+    <!-- 长条的-->
     <ProgressBar
-            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
-
-            android:id="@+id/process1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/processBar2"
             android:progress="0"
             android:max="100"
-            android:layout_width="100px"
-            android:layout_height="100px"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
     />
+    <!--
+        <Button
+                android:id="@+id/button2"
+                android:layout_width="457dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Button"/>
+        <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Button"/>
+        -->
 
-    <!--    <ProgressBar
-            android:progress="0"
-            android:max="100"
-            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-    />-->
-
-    <Button
-            android:id="@+id/button2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:text="Button"/>
-    <Button
-            android:id="@+id/button3"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:text="Button"/>
 </LinearLayout>

@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+    在 Android 8.0（API 26）后，新加了<adaptive-icon>元素。在<adaptive-icon>标签中<background>标签用于指定图标的背景层，<foreground>标签用于指定图标的前景层。<foreground>和<background>内部元素均支持android:drawable属性。
+    这是一个使用SVG格式绘制出来的带纹理的底图。背景层并不是一定要用SVG格式的图片，你也可以使用普通的PNG、JPG等格式的图片，甚至是直接指定一个背景色都可以。
+
+    这里也是使用SVG格式绘制出了一个Android机器人的Logo，并且这个机器人还是带投影效果的。当然了，前景层我们也是可以使用PNG、JPG等格式的图片。
+
+    作者：翻译不了的声响
+    链接：https://www.jianshu.com/p/e01d8b9e8cee
+    来源：简书
+    著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+    -->
     <background android:drawable="@drawable/ic_launcher_background"/>
-    <foreground android:drawable="@drawable/ic_launcher_foreground"/>
+    <foreground android:drawable="@drawable/ss2"/>
 </adaptive-icon>
+
+        <!--默认值哦-->
+        <!--<background android:drawable="@drawable/ic_launcher_background"/>-->
+        <!--    <foreground android:drawable="@drawable/ic_launcher_foreground"/>-->

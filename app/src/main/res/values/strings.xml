@@ -1,3 +1,5 @@
+<!-- 修改程序名 app_name 请到values/strings.xml下，修改<string name=”app_name”>你的程序名称</string>节点
+-->
 <resources>
-    <string name="app_name">S</string>
+    <string name="app_name">诗</string>
 </resources>
