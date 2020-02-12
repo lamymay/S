@@ -22,7 +22,8 @@ public class ViewActivity extends Activity implements View.OnClickListener {
         // 在Activity中通过findViewById来查找这个控件
         findViewById(R.id.testBtn).setOnClickListener(this);
         testEditText = (EditText) findViewById(R.id.testEditText);
-        processBar2 = findViewById(R.id.processBar1);
+        // processBar2 是直线加载样式的进度条， 转圈的进度条如何控制？
+        processBar2 = findViewById(R.id.processBar2);
     }
 
 
@@ -63,6 +64,8 @@ public class ViewActivity extends Activity implements View.OnClickListener {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 //点击 ”确定“后的操作
+                dialog.dismiss();
+                ViewActivity.this.finish();
             }
 
         });
