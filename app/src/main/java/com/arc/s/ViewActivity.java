@@ -38,7 +38,7 @@ public class ViewActivity extends Activity implements View.OnClickListener {
 //            String msg = "点我了，获取输入框的值=" + text;
 //            Toast.makeText(this, "=-=  \n" + msg, Toast.LENGTH_SHORT).show();
 
-            //进度条 模拟， 每一次点击增加一点
+            //测试进度条 模拟， 每一次点击增加一点
             int progress = processBar2.getProgress();
             progress += 10;
             if (progress > 100) {
@@ -50,19 +50,19 @@ public class ViewActivity extends Activity implements View.OnClickListener {
 
 
     /**
-     * 测试进度条
+     * 测试 弹出框
      */
     @Override
     public void onBackPressed() {
         //        super.onBackPressed();
         //返回时拦截
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("确认退出吗");
-        builder.setMessage("退出");
+        builder.setTitle("退出");
+        builder.setMessage("确认退出吗？");
         builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                //点击后的操作
+                //点击 ”确定“后的操作
             }
 
         });
@@ -73,6 +73,7 @@ public class ViewActivity extends Activity implements View.OnClickListener {
                 dialog.dismiss();
             }
         });
+        //显示
         builder.show();
     }
 }
