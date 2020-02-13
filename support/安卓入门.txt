@@ -149,6 +149,10 @@ Button
 
 
 
+接下来介绍 弹出框 AlertDialog
+
+ logo 适配
+需要使用矢量图，及时更新图标，参考网址：https://blog.csdn.net/ccffvii/article/details/89037137
 
 
 

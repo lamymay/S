@@ -18,8 +18,8 @@
             android:theme="@style/AppTheme">
 
         <!--  声明程序入口，程序启动在 做跳转到 MainActivity-->
-<!--        <activity android:name=".WelcomeActivity">-->
-        <activity android:name=".ViewActivity">
+        <activity android:name=".WelcomeActivity">
+<!--        <activity android:name=".ViewActivity">-->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
