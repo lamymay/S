@@ -6,11 +6,11 @@
         android:layout_height="match_parent">
 
 
-    <!--相对布局的一种测试案例-->
+    <!--百分比布局的一种测试案例-->
     <TextView
             android:layout_gravity="right"
             android:id="@+id/t1"
-            android:text="内部元素1"
+            android:text="百分比布局的一种测试案例"
             android:background="#dddddd"
             android:textSize="48sp"
             android:layout_width="wrap_content"
