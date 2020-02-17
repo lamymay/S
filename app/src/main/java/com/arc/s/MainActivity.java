@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
 //        Toast.makeText(this, "接收到的参数" + v1 + v2, Toast.LENGTH_SHORT).show();//Toast 用于弹出提示
 //        //A to B  ,B is this  END
 
-
         Intent intent = new Intent();//在这个地方返回数据
         intent.putExtra("bKey1", 4444);
         intent.putExtra("bKey2", "返回值是 String 啦啦啦");
