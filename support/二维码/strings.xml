@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">码</string>
+    <string name="qr_input_sms_1">输入文本</string>
+    <string name="qr_btn_create_img">转换为二维码</string>
+</resources>
